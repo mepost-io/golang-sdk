@@ -107,7 +107,7 @@ func (c *Client) makeRequest(method string, url string, jsonData []byte) (map[st
 	if err != nil {
 		return nil, fmt.Errorf("error creating request: %v", err)
 	}
-	req.Header.Set("Authorization", "Bearer "+c.APIKey)
+	req.Header.Set("Authorization", c.APIKey)
 	req.Header.Set("Content-Type", "application/json")
 
 	client := &http.Client{}
