@@ -19,7 +19,7 @@ Installation
 To install the Mepost Go SDK, you need to have Go installed on your machine (version 1.13+ is required). You can install this package by running:
 
 ```bash
-go get github.com/yourusername/mepost-go-sdk
+go get github.com/mepost-io/golang-sdk
 ```
 Usage
 -----
