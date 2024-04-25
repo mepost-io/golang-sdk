@@ -35,7 +35,7 @@ package main
 
 import (
     "fmt"
-    "github.com/yourusername/mepost-go-sdk"
+    "github.com/mepost-io/golang-sdk/mepost"
 )
 
 func main() {
