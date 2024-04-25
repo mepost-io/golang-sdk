@@ -80,7 +80,7 @@ fmt.Println("Scheduled Message:", email)
 ```
 ### API Methods
 
-# **NewClient(apiKey string) \*Client**
+### `NewClient(apiKey string) *Client`
 
 *   **Description**: Creates a new client instance with the provided API key.
     
@@ -89,16 +89,16 @@ fmt.Println("Scheduled Message:", email)
     *   **apiKey**: Your Mepost API key as a string.
         
 
-# **SendEmail(emailData map\[string\]interface{}) (map\[string\]interface{}, error)**
+### `SendEmail(emailData map[string]interface{}) (map[string]interface{}, error)`
 
 *   **Description**: Sends an email with the provided email data.
     
 *   **Parameters**:
     
-    *   **emailData**: A map containing the email details such as **from\_email**, **subject**, **text**, and **to**.
+    *   **emailData**: A map containing the email details such as **from_email**, **subject**, **text**, and **to**.
         
 
-# **SendEmailByTemplate(emailData map\[string\]interface{}, templateID string) (map\[string\]interface{}, error)**
+### `SendEmailByTemplate(emailData map[string]interface{}, templateID string) (map[string]interface{}, error)`
 
 *   **Description**: Sends an email using a specified template.
     
@@ -109,7 +109,7 @@ fmt.Println("Scheduled Message:", email)
     *   **templateID**: The ID of the template you want to use for sending the email.
         
 
-# **GetInfo(scheduleID string, email string) (map\[string\]interface{}, error)**
+### `GetInfo(scheduleID string, email string) (map[string]interface{}, error)`
 
 *   **Description**: Retrieves information about a specific scheduled message.
     
@@ -120,7 +120,7 @@ fmt.Println("Scheduled Message:", email)
     *   **email**: The email address associated with the message.
         
 
-# **CancelScheduledMessage(scheduledMessageID string) (map\[string\]interface{}, error)**
+### `CancelScheduledMessage(scheduledMessageID string) (map[string]interface{}, error)`
 
 *   **Description**: Cancels a scheduled message.
     
@@ -129,7 +129,7 @@ fmt.Println("Scheduled Message:", email)
     *   **scheduledMessageID**: The ID of the message you want to cancel.
         
 
-# **GetScheduledMessage(scheduleID string) (map\[string\]interface{}, error)**
+### `GetScheduledMessage(scheduleID string) (map[string]interface{}, error)`
 
 *   **Description**: Retrieves a scheduled message.
     
