@@ -1,4 +1,4 @@
-Mepost Go SDK
+mepost go sdk
 =============
 
 This Go library provides a simple way to interact with the Mepost API, allowing users to send emails, manage scheduled messages, and more using the Mepost platform.
@@ -50,9 +50,10 @@ func main() {
 emailData := map[string]interface{}{
     "from_email": "info@example.com",
     "subject": "Test Email",
-    "text": "This is a test email sent from the Mepost Go SDK.",
+    "html": "This is a test email sent from the Mepost Go SDK.",
     "to": []interface{}{
-        map[string]interface{}{"email": "recipient@example.com"},
+        map[string]interface{}{"email": "recipient1@example.com"},
+        map[string]interface{}{"email": "recipient2@example.com"},
     },
 }
 
@@ -77,7 +78,7 @@ if err != nil {
 }
 fmt.Println("Scheduled Message:", email)
 ```
-### Methods
+### API Methods
 
 # **NewClient(apiKey string) \*Client**
 
